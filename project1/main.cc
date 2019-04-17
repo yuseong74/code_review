@@ -16,6 +16,9 @@ void popQueue(templatePriorityQueue<T>* Que){
 	Que->pop();
 }
 
+#define MIX_CUSTOM_NUMBER	2000
+#define MIN_CUSTOM_NUMBER	(-500)
+
 int main(int argc, char* argv[]){
 	templatePriorityQueue<int> priQueue;
 	int customNumber = 0;
@@ -32,7 +35,7 @@ int main(int argc, char* argv[]){
 
 	if( argc > 1 ){
 		customNumber = atoi(argv[1]);
-		if( customNumber > -500 && customNumber < 2000 ){
+		if( customNumber > MIN_CUSTOM_NUMBER && customNumber < MIX_CUSTOM_NUMBER){
 			pushQueue(&priQueue,customNumber);
 		}
 		else{
