@@ -21,6 +21,7 @@ class templatePriorityQueue {
 		{
 			return storage.size();
 		}
+
 		void push(const T& val)
 		{
 			storage.push(val);
